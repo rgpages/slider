@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<style>
+
+	body{
+		margin:0;
+	}
+	
+	div#rightIMG { 
+		position: relative; font-size: 0; 
+		-ms-touch-action: none;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		
+		/*added so that it doesn't get massive*/
+		max-width:980px;
+		margin:0 auto;
+	}
+	div#rightIMG img { 
+		width: 100%;
+		height: auto;
+	}
+	div#leftIMG { 
+		background-image: url(media/suit2.jpg);
+		position: absolute;
+		top: 0; left: 0; height: 100%;
+		width: 50%;
+		background-size: cover;
+		
+		/*for middle bar*/
+		border-right: 2px solid black;
+		/*box-shadow: 0 0 10px 5px blue inset;*/
+	}
+	div#rightIMG:hover {
+		cursor: col-resize; 
+	}	
+</style>
+
+</head>
+<body>
+	<div id="rightIMG">
+		<img src="media/fair2.jpg" id="filler" alt>
+		<div id="leftIMG"></div>
+	</div>
+
+	<script>
+	
+		var inkbox = document.getElementById("rightIMG");
+		var colorbox = document.getElementById("leftIMG");
+		var fillerImage = document.getElementById("filler");
+		inkbox.addEventListener("mousemove",trackLocation,false);
+		inkbox.addEventListener("touchstart",trackLocation,false);
+		inkbox.addEventListener("touchmove",trackLocation,false);
+
+		function trackLocation(e)
+		{
+			var rect = filler.getBoundingClientRect();
+			var position = ((e.pageX - rect.left) / filler.offsetWidth)*100;
+			if (position <= 100) { colorbox.style.width = position+"%"; }
+		}
+		
+	</script>
+
+</body>
