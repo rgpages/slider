@@ -25,8 +25,6 @@ Lightning implementation:
 
 </div>
 
-
 ```
-
 
 See https://github.com/registerguard/tracker/issues/455 for more info.
