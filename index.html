@@ -1,16 +1,21 @@
 <html>
 <head>
 
+<!--  This is meant for an iframe so keep it light  -->
+
 <meta name="viewport" content="width=device-width, user-scalable=no">
 
 <style>
-
+	
+	/* stretch out to edges */
 	body{
 		margin:0;
 	}
 	
+	/* */
 	div#rightIMG { 
-		position: relative; font-size: 0; 
+		position: relative;
+		font-size: 0; 
 		-ms-touch-action: none;
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -19,41 +24,51 @@
 		max-width:980px;
 		margin:0 auto;
 	}
+	
+	/* */
 	div#rightIMG img { 
 		width: 100%;
 		height: auto;
 	}
+	
+	/* image on the left */
 	div#leftIMG { 
-		background-image: url(media/suit2.jpg);
+		background-image: url(media/left.png);
 		position: absolute;
-		top: 0; left: 0; height: 100%;
+		top: 0;
+		left: 0;
+		height: 100%;
 		width: 50%;
 		background-size: cover;
 		
 		/*for middle bar*/
 		border-right: 2px solid black;
-		/*box-shadow: 0 0 10px 5px blue inset;*/
 	}
+	
+	/* for the cursor */
 	div#rightIMG:hover {
 		cursor: col-resize; 
-	}	
+	}
+	
 </style>
 
 </head>
 <body>
+	
 	<div id="rightIMG">
-		<img src="media/fair2.jpg" id="filler" alt>
+		<!-- This is your right image -->
+		<img src="media/right.png" id="filler" alt>
 		<div id="leftIMG"></div>
 	</div>
 
 	<script>
 	
-		var inkbox = document.getElementById("rightIMG");
+		var rightBox = document.getElementById("rightIMG");
 		var colorbox = document.getElementById("leftIMG");
 		var fillerImage = document.getElementById("filler");
-		inkbox.addEventListener("mousemove",trackLocation,false);
-		inkbox.addEventListener("touchstart",trackLocation,false);
-		inkbox.addEventListener("touchmove",trackLocation,false);
+		rightBox.addEventListener("mousemove",trackLocation,false);
+		rightBox.addEventListener("touchstart",trackLocation,false);
+		rightBox.addEventListener("touchmove",trackLocation,false);
 
 		function trackLocation(e)
 		{
