@@ -2,11 +2,13 @@
 
 This is an image comparison slider.
 
-**[Working example](http://pages.registerguard.com/slider/)**
+**[DEMO](http://pages.registerguard.com/slider/)**
 
-**[Working story example](http://registerguard.com/rg/staging/31724631-110/fair-bob-indya-oregon-says.html.csp)**
+[Working example](http://pages.registerguard.com/Country-Fair-slider/) ([GitHub repo](http://github.com/rgpages/Country-Fair-slider))
 
-Code tutorial: [Mobile-friendly, responsive scrubber](http://demosthenes.info/blog/842/A-Mobile-Ready-Before-And-After-Image-Comparison-UI)
+[Working story example](http://registerguard.com/rg/staging/31724631-110/fair-bob-indya-oregon-says.html.csp)
+
+---
 
 Lightning implementation:
 
@@ -28,3 +30,8 @@ Lightning implementation:
 ```
 
 See https://github.com/registerguard/tracker/issues/455 for more info.
+
+---
+
+
+Code tutorial: [Mobile-friendly, responsive scrubber](http://demosthenes.info/blog/842/A-Mobile-Ready-Before-And-After-Image-Comparison-UI)
