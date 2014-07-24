@@ -2,7 +2,7 @@
 
 This is an image comparison slider.
 
-![screenshot](http://github.com/rgpages/slider/default.gif)
+![screenshot](https://github.com/rgpages/slider/blob/gh-pages/default.gif)
 
 **[DEMO](http://pages.registerguard.com/slider/)**
 
