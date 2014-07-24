@@ -2,6 +2,8 @@
 
 This is an image comparison slider.
 
+![screenshot](http://github.com/rgpages/slider/default.gif)
+
 **[DEMO](http://pages.registerguard.com/slider/)**
 
 [Working example](http://pages.registerguard.com/Country-Fair-slider/) ([GitHub repo](http://github.com/rgpages/Country-Fair-slider))
